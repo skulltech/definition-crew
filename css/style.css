@@ -1074,3 +1074,20 @@ select:-webkit-autofill {
         -webkit-transform: scale(1.0);
     }
 }
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 7s 1;
+}
+.boxchange:hover {
+    background-color: white;
+}
