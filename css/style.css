@@ -149,7 +149,6 @@ p {
     background-color: rgba(33, 33, 33, .75);
 }
 .logo{
-    padding-bottom: 50px;
 }
 .home_text{
     text-align: left;
@@ -1073,4 +1072,21 @@ select:-webkit-autofill {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
     }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.1, .1, .1);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 7s 1;
+}
+.boxchange:hover {
+    background-color: white;
 }
